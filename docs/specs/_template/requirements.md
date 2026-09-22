@@ -25,11 +25,14 @@ EARS = Easy Approach to Requirements Syntax. Each criterion is testable:
 - **AC-1.1**: WHEN … THE SYSTEM SHALL …
 - **AC-1.2**: IF … THEN THE SYSTEM SHALL …
 
-## Safety & privacy check
+## Safety, privacy & ethics check
 
 - [ ] Does this touch mood/trigger data? → local-only, never logged
 - [ ] Does it show advice? → must cite a source in `docs/research/sources.md`
 - [ ] Does it touch low moments? → crisis-help path present
+- [ ] **No engagement hooks**: no streak punishment, guilt copy, badges/points, or notification pressure.
+      Does this feature reward *returning* rather than *not stopping*?
+- [ ] Does it touch motivation / habits / learning? → `/research-topic` run first, findings linked
 
 ## Out of scope
 

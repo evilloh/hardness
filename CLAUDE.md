@@ -47,6 +47,12 @@ Domain logic lives in framework-agnostic TS under `src/domain/` (no React/browse
 
 - **Not a medical device.** The app never diagnoses. Copy says "suggestion", never "treatment".
 - **Every recommendation must trace to a source** listed in `docs/research/sources.md`. No invented advice.
+- **No engagement hooks.** No streak punishment, no guilt copy, no badges/points, no notification pressure.
+  **Reward the return, not the streak.** If a design would increase time-in-app at the user's expense, reject it
+  and say why. (See "Non-goals" and principles 4–6 in `docs/product/vision.md`.)
+- **Research before advising.** Any feature touching motivation, habit-building, learning a skill, or
+  recovering from setbacks must be informed by researched, citable practice — run the `/research-topic`
+  skill first, don't improvise psychology.
 - **Crisis safety**: any feature touching mood/low moments must include a path to professional/crisis help.
 - **Privacy**: mood and trigger data is sensitive health data. Local-first by default; nothing leaves
   the device without explicit consent. Never log it.

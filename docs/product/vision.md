@@ -58,7 +58,10 @@ Spot patterns across the lists and the journal (e.g. "low days cluster after the
 - Diagnosis, therapy, or clinical claims.
 - Social features / sharing.
 - Wearable or health-app integrations (ADR-0002).
-- Gamification with streaks that punish you for missing a day. Missing a day is normal.
+- **Engagement-maximizing design.** No hooks, no dark patterns, no streaks that punish a missed day,
+  no notification pressure, no "don't lose your progress!" guilt. A mental-health app must not exploit
+  the psychology it claims to protect. Success is measured by the user's real-life progress,
+  not by time spent in the app.
 
 ## Principles
 
@@ -66,7 +69,19 @@ Spot patterns across the lists and the journal (e.g. "low days cluster after the
 2. **Private by default** (local-first; explicit consent before any data leaves the device).
 3. **Evidence over vibes**: every recommendation cites a source.
 4. **Kind, never guilt-tripping**: the app encourages, it doesn't scold.
-5. **Safety**: always offer a path to professional or crisis help.
+5. **Reward the return, not the streak.** Coming back after a gap is the hardest and most valuable moment,
+   so that's what we celebrate ("good to see you again, here's where you left off"), never
+   "you broke your 14-day streak". Rewards are reflective (progress you can see, a kind word,
+   your own journal evidence), not compulsive (points, badges, variable-reward slot machines).
+   *Evidence*: missing a day doesn't break habit formation (SRC-001); self-compassion after a lapse beats
+   self-criticism for recovery (SRC-002/003); extrinsic rewards can undermine intrinsic motivation (SRC-004);
+   gamification in mental-health apps carries documented ethical/efficacy risks (SRC-005).
+   The *specific* "celebrate the return" mechanic is a **design hypothesis** derived from that evidence, not a
+   validated intervention — see [research note](../research/notes/rewarding-returns-vs-streaks.md).
+6. **Grounded in practice, not vibes**: features that touch motivation, habit-building or learning must be
+   informed by research on how people actually build skills and recover from setbacks (see
+   [research policy](../research/README.md)).
+7. **Safety**: always offer a path to professional or crisis help.
 
 ## Success looks like (v1)
 
