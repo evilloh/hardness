@@ -19,4 +19,4 @@ Copy [`_template/`](_template/) to start one, or run the `/new-spec` skill.
 
 | # | Feature | Status |
 |---|---|---|
-| — | _none yet_ | — |
+| 001 | [The lists](001-the-lists/requirements.md) | Requirements approved · design next |

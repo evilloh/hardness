@@ -8,7 +8,8 @@
 **Hardness** — a mobile-first self-improvement & mental-wellness app.
 (*harness* + *hard*: keeping your mind well is hard work. Logo: the Loch Ness monster in a harness.)
 
-The user keeps four living lists — **Drains, Restores, Lifts, Longings** — turns a Longing into a
+The user rates things on two axes — **Energy** (Drains↔Recharges) and **Mood** (Lifts↔Drags) — keeps a
+**Longings** list, turns a Longing into a
 **1%-a-day** practice, journals progress (photos/notes), and gets pattern insights plus recommendations
 grounded in **cited, evidence-based** psychology sources.
 

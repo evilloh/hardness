@@ -24,15 +24,25 @@
     so a skill created mid-session only becomes invocable in the next one
   - Commit: `dd4a22c` (foundations)
 
+- [x] **Session 2 (2026-09-24): Vision v0.4 + first spec requirements**
+  - Session-start ritual explained: `CLAUDE.md` → `journey.md` → verify against files/git → reconcile → act
+  - Concepts: `CLAUDE.md` (always loaded) vs skills (on demand) vs hooks (guaranteed); plan mode vs specs;
+    **information altitude** (vision / design / evidence / decision); release (v1) vs spec vs task vs session;
+    a change to an approved doc = new version + new approval; "what did the agent add on its own?" when reviewing
+  - SRC-001 vetted. Research cycle 2: [compound-learning-little-often](../research/notes/compound-learning-little-often.md)
+    (spacing beats cramming; "37× better" is not how learning curves work) → SRC-006…010 pending
+  - Vision v0.3 → **v0.4 approved**: diary + mantras, meditation, mood check-in, statistics, release plan
+    (v1 = lists, 1%, journal, mood), EN/ES/IT, **two axes** (Energy: Drains↔Recharges, Mood: Lifts↔Drags) + Longings
+  - First real use of `/new-spec`: **spec 001 — The lists, requirements approved**
+  - Commit: pending (user is switching the GitHub account in VS Code)
+
 ## Next
 
-1. [ ] **User vets SRC-001…005** in [`sources.md`](../research/sources.md) (status `pending` → `vetted`)
-      and reads the note [rewarding-returns-vs-streaks](../research/notes/rewarding-returns-vs-streaks.md)
-2. [ ] User reviews [`docs/product/vision.md`](../product/vision.md) v0.2 and answers its open questions
-      (how to log low moments, daily mood check-in?, languages, which pillar first)
-3. [ ] Commit the anti-gamification + research changes
-4. [ ] Run `/new-spec` → spec **001 — The four lists** (first full SDD cycle: requirements → design → tasks)
-5. [ ] Scaffold the Vite + React + TS PWA, then the testing-stack ADR
+1. [ ] **Commit session 2** (after the GitHub account switch)
+2. [ ] Spec 001 **`design.md`**: screens, colours per end/level, the split pill, data model
+3. [ ] User vets **SRC-002…010** in [`sources.md`](../research/sources.md) (homework, not blocking spec 001)
+4. [ ] Research + vet **help resources** for EN / ES / IT (spec 001 AC-6.6, needed before release)
+5. [ ] Spec 001 `tasks.md`, then scaffold the Vite + React + TS PWA and the testing-stack ADR
 6. [ ] First **hook**: typecheck + tests after every edit
 
 ## Later (concepts waiting for their moment)
