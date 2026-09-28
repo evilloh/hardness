@@ -34,15 +34,32 @@
   - Vision v0.3 → **v0.4 approved**: diary + mantras, meditation, mood check-in, statistics, release plan
     (v1 = lists, 1%, journal, mood), EN/ES/IT, **two axes** (Energy: Drains↔Recharges, Mood: Lifts↔Drags) + Longings
   - First real use of `/new-spec`: **spec 001 — The lists, requirements approved**
-  - Commit: pending (user is switching the GitHub account in VS Code)
+  - Commit: `4099e7a` (made with the new GitHub account `evilloh`)
+
+- [x] **Session 3 (2026-09-28): Data model, naming, architecture**
+  - Session start caught a stale note: journey said "commit pending" but git had `4099e7a` → git wins
+  - Spec 001 `design.md`: **data model section drafted** (types, pure domain functions, decisions DM-D1…D7,
+    questions DM-Q1…Q4 all answered). Section reviewed by the user; the whole design.md is still Draft
+  - Glossary rename **End → Effect** → requirements **v1.1 approved**. Entity name **Item** kept on purpose
+  - Occurrences now record their `effect` (what list the item was on when it happened)
+  - **ADR-0003 accepted**: feature-first ("screaming") folders + light DDD; amends ADR-0002's `src/domain/`.
+    ADR README gained "one decision per ADR" and "Amends / Amended by" rules. `CLAUDE.md` updated
+  - UI design approach agreed: wireframes → visual tokens → clickable mockup → React
+  - Concepts: derived state, illegal states unrepresentable, snapshot vs reference, ubiquitous language,
+    screaming architecture, light DDD, supersede vs amend, fidelity ladder →
+    [02-naming-and-architecture.md](02-naming-and-architecture.md)
+  - Commit: see git log (`docs: spec 001 data model, End→Effect, ADR-0003 architecture`)
 
 ## Next
 
-1. [ ] **Commit session 2** (after the GitHub account switch)
-2. [ ] Spec 001 **`design.md`**: screens, colours per end/level, the split pill, data model
+1. [ ] **Wireframes** (spec 001 `design.md`, UI section): the user answers — what do I see when I open the app?
+   How do I move between lists? Where do Longings and the Archive live? How do I add an item?
+2. [ ] Rest of spec 001 `design.md`: visual tokens (colours per effect/level, the split pill), components,
+   state & persistence (storage ADR), edge cases, testing strategy → then approve design.md
 3. [ ] User vets **SRC-002…010** in [`sources.md`](../research/sources.md) (homework, not blocking spec 001)
 4. [ ] Research + vet **help resources** for EN / ES / IT (spec 001 AC-6.6, needed before release)
 5. [ ] Spec 001 `tasks.md`, then scaffold the Vite + React + TS PWA and the testing-stack ADR
+   (include the import-boundaries lint rule promised in ADR-0003)
 6. [ ] First **hook**: typecheck + tests after every edit
 
 ## Later (concepts waiting for their moment)

@@ -1,8 +1,10 @@
 # 001 — The lists: Requirements
 
-- **Status**: Approved (by the user, 2026-09-24)
+- **Status**: Approved v1.1 (by the user, 2026-09-28; v1.0 approved 2026-09-24)
 - **Owner**: @me
 - **Related**: [vision v0.4, pillar 1](../../product/vision.md), [ADR-0002 — React PWA](../../adr/0002-platform-and-stack.md)
+- **Changes in v1.1** (2026-09-28): glossary term **End → Effect** (clearer; also used as a field name in
+  `design.md`). Rename only, no behaviour changes.
 
 ## Context
 
@@ -21,11 +23,11 @@ tap is a cost**. Ask for the minimum, make the rest optional.
 |---|---|
 | **Item** | A thing in my life that I rate: a title, an optional description, and 1–2 ratings |
 | **Axis** | Energy or Mood |
-| **End** | One side of an axis: Drains / Recharges (Energy), Lifts / Drags (Mood) |
-| **Rating** | An end + a level + a value. An item has at most one rating per axis |
-| **Level** | Low / Mid / High: how strongly the item pulls towards that end |
+| **Effect** | One side of an axis: Drains / Recharges (Energy), Lifts / Drags (Mood). The effect an item has on me |
+| **Rating** | An effect + a level + a value. An item has at most one rating per axis |
+| **Level** | Low / Mid / High: how strongly the item pulls towards that effect |
 | **Value** | A number 1–10 that fine-tunes the level (for sorting) |
-| **List** | A view showing every active item with a rating on one end (Drains, Recharges, Lifts, Drags) |
+| **List** | A view showing every active item with a rating on one effect (Drains, Recharges, Lifts, Drags) |
 | **Occurrence** | A record that a Drains/Drags item "happened today" |
 | **Longing** | A reminder: a title and an optional description, no ratings |
 
@@ -50,7 +52,7 @@ Level ↔ value mapping: **Low = 1–4 (default 3)**, **Mid = 5–7 (default 6)*
 - **AC-1.1**: WHEN the user saves a new item THE SYSTEM SHALL require a non-empty title and exactly one or
   two ratings, at most one per axis.
 - **AC-1.2**: WHEN the user starts adding an item from a list (e.g. Drains) THE SYSTEM SHALL preselect that
-  list's end, so the user only types the title and picks a level.
+  list's effect, so the user only types the title and picks a level.
 - **AC-1.3**: THE SYSTEM SHALL ask for the level immediately in the add flow (no hidden default level).
 - **AC-1.4**: THE SYSTEM SHALL let the user add an optional description and an optional second rating
   (on the other axis) while adding, without making either one required.
@@ -63,7 +65,7 @@ Level ↔ value mapping: **Low = 1–4 (default 3)**, **Mid = 5–7 (default 6)*
 ### US-2 — Edit an item
 
 - **AC-2.1**: WHEN the user edits an item THE SYSTEM SHALL let them change the title, description, and
-  each rating's end, level and value, and add or remove a second rating.
+  each rating's effect, level and value, and add or remove a second rating.
 - **AC-2.2**: THE SYSTEM SHALL show and edit the value only in the item's edit view (not in the add flow
   or the lists).
 - **AC-2.3**: WHEN the user changes a rating's level THE SYSTEM SHALL reset its value to the new level's default.
@@ -75,10 +77,10 @@ Level ↔ value mapping: **Low = 1–4 (default 3)**, **Mid = 5–7 (default 6)*
 ### US-3 — See and order the lists
 
 - **AC-3.1**: THE SYSTEM SHALL show four lists (Drains, Recharges, Lifts, Drags), each containing every
-  active item that has a rating on that end.
+  active item that has a rating on that effect.
 - **AC-3.2**: WHEN an item has ratings on both axes THE SYSTEM SHALL show it in both corresponding lists,
   and editing it in one SHALL update it in both.
-- **AC-3.3**: THE SYSTEM SHALL show each item's rating(s) so that the end and level are recognisable at a
+- **AC-3.3**: THE SYSTEM SHALL show each item's rating(s) so that the effect and level are recognisable at a
   glance in the list. (How — colours, split pill — is decided in `design.md`.)
 - **AC-3.4**: THE SYSTEM SHALL let the user reorder items manually within a list, and SHALL remember that
   order per list.
@@ -166,7 +168,7 @@ Level ↔ value mapping: **Low = 1–4 (default 3)**, **Mid = 5–7 (default 6)*
 - Learning which of my own Lifts/Recharges tend to help after a Drag/Drain (needs recording what I did
   afterwards; belongs to pillar 6, see the vision's parking lot).
 - Backup, sync, export, sharing, notifications.
-- Visual design (colours per end/level, the split pill for two ratings): that's `design.md`.
+- Visual design (colours per effect/level, the split pill for two ratings): that's `design.md`.
 
 ## Open questions
 

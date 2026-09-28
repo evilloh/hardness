@@ -25,7 +25,8 @@ grounded in **cited, evidence-based** psychology sources.
 ## Stack
 
 React + TypeScript SPA (Vite), installable/offline as a PWA. See [ADR-0002](docs/adr/0002-platform-and-stack.md).
-Domain logic lives in framework-agnostic TS under `src/domain/` (no React/browser imports).
+Feature-first folders (`src/<feature>/domain|ui|data`), named after the specs' glossaries. Domain logic is
+framework-agnostic TS in each `domain/` (no React/browser imports). See [ADR-0003](docs/adr/0003-code-architecture.md).
 
 ## How we work: Spec-Driven Development (SDD)
 

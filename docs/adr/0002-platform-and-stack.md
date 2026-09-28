@@ -1,6 +1,6 @@
 # 0002 — Platform & tech stack
 
-- **Status**: Accepted
+- **Status**: Accepted (domain location `src/domain/` amended by [0003](0003-code-architecture.md))
 - **Date**: 2026-09-22
 
 ## Context
